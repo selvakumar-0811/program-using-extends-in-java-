@@ -1,0 +1,30 @@
+# program-using-extends-in-java
+import java.util.*;
+class display
+{
+     String s;
+     int n;
+}
+class data extends display
+{
+    void set(String s,int n)
+    {
+        super.s=s;
+        super.n=n;
+    }
+    void show()
+    {
+        System.out.print(s+"\n"+n);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    data d=new data();
+	    int n=sc.nextInt();
+	    String s=sc.next();
+		d.set(s,n);
+		d.show();
+	}
+}
